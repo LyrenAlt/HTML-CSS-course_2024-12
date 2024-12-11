@@ -1,0 +1,14 @@
+body {
+    background-color: #131313;
+    color: #eee;
+    margin: 2rem;
+}
+
+a {
+    color:#9999ff;
+}
+
+input {
+    margin: 0.5rem;
+    margin-left: 0rem;
+}

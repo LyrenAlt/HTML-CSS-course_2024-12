@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid stuff</title>
+    <style>
+        .grid1 {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(6, 50px);
+            gap: 10px;
+        }
+        .grid1-item {
+            background-color: red;
+        }
+        .grid2 {
+            display: grid;
+            grid-template-areas: 
+            "side main"
+            "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 200px 80px;
+            gap: 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+        .grid2-side {
+            grid-area: side;
+            background-color: blue;
+        }
+        .grid2-main {
+            grid-area: main;
+            background-color: lightblue;
+        }
+        .grid2-footer {
+            grid-area: footer;
+            background-color: gray;
+        }
+        .grid3 {
+            display: grid;
+            grid-template-columns: repeat(30, 1fr);
+            grid-template-rows: repeat(60, 50px);
+            gap: 2px;
+            border: 1px solid black;
+        }
+        .grid3-item {
+            background-color: darkslategray;
+        }
+        .grid4 {
+            display: grid;
+            grid-template-areas: 
+            "menu"
+            "column1"
+            "column2"
+            "column3";
+            grid-template-columns: 600px;
+            grid-template-rows: repeat(4, 200px);
+        }
+        @media only screen and (min-width: 600px) {
+            .grid4 {
+            grid-template-areas: 
+            "menu menu menu"
+            "column1 column2 column3";
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: 200px 600px;
+            }
+        }
+        .grid4-menu {
+            grid-area: menu;
+            background-color: gray;
+        }
+        .grid4-column1 {
+            grid-area: column1;
+            background-color: lightcoral;
+        }
+        .grid4-column2 {
+            grid-area: column2;
+            background-color: lightgreen;
+        }
+        .grid4-column3 {
+            grid-area: column3;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid1">
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+        <div class="grid1-item"></div>
+    </div>
+    <div class="grid2">
+        <div class="grid2-side"></div>
+        <div class="grid2-main"></div>
+        <div class="grid2-footer"></div>
+    </div>
+    <div class="grid3">
+    </div>
+    <div class="grid4">
+        <div class="grid4-menu"></div>
+        <div class="grid4-column1"></div>
+        <div class="grid4-column2"></div>
+        <div class="grid4-column3"></div>
+    </div>
+</body>
+</html>

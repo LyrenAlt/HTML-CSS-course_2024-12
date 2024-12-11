@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #ddd;
+        }
+        .responsive-typography {
+            width: 60vh;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid yellow;
+        }
+        .responsive-typography h1, p {
+            margin: 8px;
+        }
+        h1 {
+            font-size: 5rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 900px) {
+            .responsive-typography h1 {
+                font-size: 4.5rem;
+            }
+            .responsive-typography p {
+                font-size: 1.5rem;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .responsive-typography h1 {
+                font-size: 4rem;
+            }
+            .responsive-typography p {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-typography">
+        <h1 style="text-align: center;">Headline</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut tenetur voluptates culpa labore vitae dicta eius repellendus similique laboriosam necessitatibus. Neque voluptatibus ab molestiae velit quaerat cumque assumenda provident accusamus!</p>
+    </div>
+</body>
+</html>

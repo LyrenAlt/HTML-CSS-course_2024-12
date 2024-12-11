@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anim</title>
+    <style>
+        body {
+            background-color: #232323;
+        }
+        .button {
+            background-color: orangered;
+            width: 200px;
+            height: 200px;
+            transition: background-color, 400ms;
+            transition: width, 500ms;
+        }
+        .button:hover {
+            background-color: orange;
+            width: 300px;
+        }
+        .button2 {
+            width: 200px;
+            height: 80px;
+            text-align: center;
+            color: white;
+            opacity: 0.2;
+            font-size: 2rem;
+            transition: color, 600ms;
+            transition-timing-function: ease-out;
+        }
+        .button2:hover {
+            opacity: 1;
+        }
+        .button3 {
+            background-color: #ddd;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            transition: all, 500ms;
+        }
+        .button3:hover {
+            transform: translateX(100px) rotate(45deg);
+        }
+        .buttongroup {
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttongroup">
+        <div class="button">Hover</div>
+    </div>
+    <div class="buttongroup">
+        <div class="button2">Hover</div>
+    </div>
+    <div class="buttongroup">
+        <div class="button3">Hover</div>
+    </div>
+</body>
+</html>

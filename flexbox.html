@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background-color: rgb(103 114 149);
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            max-height: 30rem;
+            min-height: 24rem;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid black;
+            margin-top: 2vh;
+            background-color: #ddd;
+        }
+        .card > div {
+            margin: 8px;
+        }
+        .explore {
+            width: 150px;
+            height: 30px;
+        }
+        .navbar {
+            display: flex;
+            height: 8vh;
+            border: 3px solid #aaa;
+            border-radius: 4px;
+            background-color: #686e6d;
+        }
+        .navbar-item {
+            width: 200px;
+            margin: 8px 5px 8px 5px;
+            border: 2px solid #ddd;
+            text-align: center;
+            align-content: space-evenly;
+            color: #ddd;
+            font-size: 1.5em;
+            font-family: Verdana;
+            background-color: #444;
+        }
+        .navbar-logo {
+            align-content: space-evenly;
+            border: none;
+            margin: 5px;
+        }
+        .navbar-logo img {
+            height: 6.5vh;
+        }
+        @media only screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+            }
+            .navbar-logo {
+                margin-left: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo"><img src="bfly.png"></div>
+        <div style="flex-grow: 1;"></div>
+        <div class="navbar-item">Browse</div>
+        <div class="navbar-item">Top</div>
+        <div class="navbar-item">Forum</div>
+        <div class="navbar-item">About</div>
+    </div>
+    <div style="display:flex;justify-content: center;">
+        <div class="card">
+            <div>
+                <h1><u>HTML & CSS Title</u></h1>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<p>
+                <p>Reiciendis quas architecto accusamus non explicabo, perferendis quasi minima suscipit alias doloremque debitis,</p>
+                <p>fugiat fuga eos possimus iste ratione, ea voluptas! Nesciunt.</p>
+            </div>
+            <div>
+                <a href="https://moodle.oulu.fi/course/view.php?id=25889"><button class="explore">
+                    Explore
+                </button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
