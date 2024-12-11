@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="hw2.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div style="flex-grow: 1;"></div>
+        <div class="navbar-logo"><img src="logo.png"></div>
+        <div class="navbar-item"><a href="products.html">Products ⌵</a></div>
+        <div class="navbar-item"><a href="solutions.html">Solutions ⌵</a></div>
+        <div class="navbar-item"><a href="community.html">Community ⌵</a></div>
+        <div class="navbar-item"><a href="resources.html">Resources ⌵</a></div>
+        <div class="navbar-item"><a href="pricing.html">Pricing</a></div>
+        <div style="flex-grow: 1;"></div>
+        <div class="navbar-item"><a href="contact-sales.html">Contact sales</a></div>
+        <div class="navbar-item bordered-white"><a href="log-in.html">Log in</a></div>
+        <div class="navbar-item bordered-black"><a href="log-in.html">Get started for free</a></div>
+        <div style="flex-grow: 1;"></div>
+    </div>
+        <div class="centering" style="margin-top: 12vh;max-width: 50%;">
+            <h1><b>Bring design and dev together.</b><br>Easily translate designs into code with a workflow built for developers.</h1>
+        </div>
+        <div style="display:flex;justify-content: space-between;width:100%;">
+            <div style="flex-grow: 1;"></div>
+            <p style="margin-block-end: 0;">1/4</p>
+            <div style="flex-grow: 5;"></div>
+            <p class="arrow-icon">🡐</p>
+            <p class="arrow-icon">🡒</p>
+            <div style="flex-grow: 1"></div>
+        </div>
+        <div class="centering" style="display:flex;flex-wrap: nowrap;margin-top:2vh;">
+            <div class="card">
+                <div>
+                    <img
+                        src="https://cdn.sanity.io/images/599r6htc/regionalized/ed6e1575c8d6883805697d4c1520fb30973d6dc5-1200x800.png?rect=1,0,1199,800&w=700&h=467&q=75&fit=max&auto=format&dpr=2">
+                </div>
+                <div>
+                    <p><b>Design systems that scale.</b> Streamline the product development process with a design system that’s aligned across design and code.</p>
+                    <p><a href="learn1.html">Learn about design systems</a></p>
+                </div>            
+            </div>
+            <div class="card">
+                <div>
+                    <img
+                        src="https://cdn.sanity.io/images/599r6htc/regionalized/2bf04a9f99c999738ebcd55cc65e5def56a02140-1320x880.png?rect=1,0,1319,880&w=700&h=467&q=75&fit=max&auto=format&dpr=2">
+                </div>
+                <div>
+                    <p><b>Keep design and code connected.</b> Bring your component code into Dev Mode so developers get the right code, every time.</p>
+                    <p><a href="learn2.html">Learn about Dev Mode</a></p>
+                </div>            
+            </div>
+            <div class="card">
+                <div>
+                    <img
+                        src="https://cdn.sanity.io/images/599r6htc/regionalized/63ff8af488b86fc9b967adaf88584fbbbc2d8cc6-1320x880.png?rect=1,0,1319,880&w=700&h=467&q=75&fit=max&auto=format&dpr=2">
+                </div>
+                <div>
+                    <p><b>Focus on the details in Focus View.</b> Select and inspect a specific design in Dev Mode, then dig into the details in Focus View so you know exactly what to build.</p>
+                </div>            
+            </div>
+        </div>
+</body>
+
+</html>

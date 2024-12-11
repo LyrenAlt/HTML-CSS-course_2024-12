@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table.financial {
+            width: 40%;
+            border-spacing: 0px;
+        }
+        th.headers, td.headers {
+            text-align: left;
+        }
+        th.headers, th.data {
+            border-bottom: 1px solid red;
+        }
+        th.data, td.data {
+            text-align: right;
+        }
+        td.headers, td.data {
+            padding: 0.3rem;
+        }
+        th.tablebottom, td.tablebottom {
+            font-weight: 900;
+            border-top: 2px solid black;
+        }
+        th, td {
+            padding-right: 0.3rem;
+        }
+        .tanbg {
+            background-color: #e0dfd8;
+        }
+
+
+        h1 {
+            color: red;
+            font-size: 2rem;
+        }
+        h2 {
+            color: darkgray;
+            font-size: 1.2rem;
+        }
+        tr td:nth-child(3), tr th:nth-child(3) {
+            background-color: rgb(172, 209, 172);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>REVENUE</h1>
+        <h2>REVENUE BY MARKET AREA</h2>
+    </div>
+    <div>
+        <table class="financial">
+            <thead>
+                <tr>
+                    <th class="headers">EUR thousand</th>
+                    <th class="data tanbg">7-9/2022</th>
+                    <th class="data">7-9/2021</th>
+                    <th class="data">Change</th>
+                    <th class="data">1-9/2021</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="headers">Finland</td>
+                    <td class="data tanbg">6,971</td>
+                    <td class="data">10,053</td>
+                    <td class="data">-30,7%</td>
+                    <td class="data">29,050</td>
+                </tr>
+                <tr>
+                    <td class="headers">Scandinavia</td>
+                    <td class="data tanbg">2,312</td>
+                    <td class="data">2,589</td>
+                    <td class="data">-10,7%</td>
+                    <td class="data">7,013</td>
+                </tr>
+                <tr>
+                    <td class="headers">Germany</td>
+                    <td class="data tanbg">5,717</td>
+                    <td class="data">9,094</td>
+                    <td class="data">-37,1%</td>
+                    <td class="data">20,708</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="headers tablebottom">Total</td>
+                    <td class="data tanbg tablebottom">37,441</td>
+                    <td class="data tablebottom">46,176</td>
+                    <td class="data tablebottom">-18,9%</td>
+                    <td class="data tablebottom">134,289</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
